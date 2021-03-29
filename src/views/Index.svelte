@@ -5,7 +5,7 @@ import { navigate } from "svelte-routing";
 
   function navigateToLogin() {
     console.log("navigating to login");
-    navigate("/auth/login", {replace: true, state: {}});
+    navigate("/auth", {replace: true, state: {}});
   }
 
   onMount(async () => {

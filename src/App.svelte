@@ -4,7 +4,7 @@
   import Index from "./views/Index.svelte";
 
   import Auth from "./views/auth/Login.svelte"
-  import Admin from "./views/admin/Home.svelte"
+  import Home from "./views/admin/Home.svelte"
 import TailwindCSS from "./TailwindCSS.svelte";
 
   export let url = "";
@@ -14,7 +14,7 @@ import TailwindCSS from "./TailwindCSS.svelte";
 
 <Router {url}>
   <!-- admin layout -->
-  <Route path="/admin" component={Admin} />
+  <Route path="/home" component={Home} />
   <!-- auth layout -->
   <Route path="/auth" component={Auth} />
 
